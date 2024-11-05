@@ -1,0 +1,58 @@
+1. change title in index.html
+2. delete all the unwanted codes.clear app.css, clear state and imports in app.jsx, clear index.css and mention the required style in universal selector *
+3. install react bootstrap using npm install
+4. choose a boostrap theme inordr to apply bootstrap properly in a react project using bootswatch.com
+5.choose apprpriate theme and slect min.css and download
+6.cut and paste it in src folder
+7. import bootstrap.min.css in project main.jsx file
+8. create a folder for different pages for this application in src folder
+9.create different component for different pages and create the rafce structure
+10.setup path/url for each component in react using react-router-dom (install)
+11.steps to setup path/url to each component:
+    1.render the entire react app inside 'BrowserRouter' component of react-router-dom library, provide this step in main.jsx file
+    2.inorder to set up path to components make sure each components must be routes component of 'react router dom' library.provide this step inside app.jsx file
+    3.ie, import routes in app.jsx
+        to set up path for component, use 'route' component of react-router-dom library. route component has attributes
+        like 'path' and 'elemnt' inorder setup route for component.all rote component must 
+        be inside route components.
+
+12.higher order components (hoc): are components whose props will give another component.
+    ex: route component
+
+    design landing pages
+    --------------------
+    1.create header and footer compnents and import it to app.jsx
+    2. set up path for components using react-router-dom library
+    3.create a component folder inorder to hold reusable codes in different pages of react app, create component file inside it.
+    
+(*) never use href for react redirecting because it will refresh the page and then only redirect to nexxt page.hence use link for redirection.
+but if we want to redirect to another website then use href.
+(*)all path related things are handled by react roter dom
+
+
+=> make home component and create all the child components and link everything
+
+
+------------------------------------------------------------
+                JSON SERVER CREATION
+============================================================
+
+1. create a folder outside frontend
+2. npm init -y
+3. npm i json-server
+4. create db.json file and create keys for key-value pairs which is the required data to be stored in our project.
+5. run json server using command -> npx json-server db.json => to connect with the front end app in browser and our server folder. this will run in localhost 3000.
+6. for api call in react, we use fetchapi,xmlhttprequest (XHR), axios api
+7. here we use axios library, a third party library
+8. npm i axios (in front end)
+9. create services folder inside src of react app
+10. to hold server url, create a folder in front end and then export.
+11.in axios, for api call they use function axios(). this is just one way of approach for api call.
+12.for this we want to create request configuration. hence use pre defined keys.
+config obj => method (key)
+url => key is  - url
+request body in key => data
+.then => server response
+catch => error
+await is used since its a async function. otherwise, since return statement is used, its execution will go directly to function call.
+to delay execution, await is used.
